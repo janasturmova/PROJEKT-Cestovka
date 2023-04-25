@@ -15,120 +15,130 @@
 </head>
 <body>
 
-    <!--sekce header-->
+    <!--header-->
     <header class="header">
 
-        <img class="header__logo" src="fota/logo.svg" alt="logo">
-        <nav class="header__menu">
-            <a class="header__item" href="#">Last minute</a>
-            <a class="header__item" href="#">Destinace</a>
-            <a class="header__item" href="#">Časté dotazy</a>
+        <img class="logo" src="images/logo.svg" alt="logo">
+        <nav class="menu">
+            <a class="menu__item" href="#">Last minute</a>
+            <a class="menu__item" href="#">Destinace</a>
+            <a class="menu__item" href="#">Časté dotazy</a>
         </nav>
 
     </header>
 
-    <!--sekce first-offers-->
-    <section class="offers first-offers">
+    <main>
+        <!--sekce first-offers-->
+        <section class="offers">
+            
+            <div class="offer">
+                <img class="offer__image" src="images/palmy.png" alt="Pod palmami">
+                <p class="offer__price">17 600 Kč</p>
+                <h1 class="offer__title--big">Pohoda pod palmami</h1>
+                <p class="offer__text">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+            </div>
+
+            <div class="offer">
+                <img class="offer__image" src="images/jezero2.png" alt="Jezere">
+                <p class="offer__price">8 490 Kč</p>
+                <h3 class="offer__title--small">Klid u Jezera</h3>
+            </div>
+
+            <div class="offer">
+                <img class="offer__image" src="images/nakole.png" alt="Na kole">
+                <p class="offer__price">4 990 Kč</p>
+                <h3 class="offer__title--small">Výlet na kole</h3>
+            </div>
+            
+        </section>
         
-        <div class="offers__offer--big">
-            <p class="offers__price">17 600 Kč</p>
-            <h1 class="offers__title--big">Pohoda pod palmami</h1>
-            <p class="offers__text">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
-        </div>
+        <!--sekce ikons-->
+        <section class="ikons">
 
-        <div class="offers__offer--small">
-            <p class="offers__price">8 490 Kč</p>
-            <h3 class="offers__title--small">Klid u Jezera</h3>
-        </div>
-
-        <div class="offers__offer--small">
-            <p class="offers__price">4 990 Kč</p>
-            <h3 class="offers__title--small">Výlet na kole</h3>
-        </div>
-        
-    </section>
-    
-    <!--sekce ikons-->
-    <section class="ikons">
-
-        <div class="ikon">
-            <img class="ikon__image" src="fota/map.svg" alt="Bod na mapě">
-            <div class="ikon__folder">
-                <h4 class="ikon__title">Podpora na místě</h4>
-                <p class="ikon__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
-            </div>
-        </div>
-
-        <div class="ikon">
-            <img class="ikon__image" src="fota/plane.svg" alt="letadlo">
-            <div class="ikon__folder">
-                <h4 class="ikon__title">Služby na letišti</h4>
-                <p class="ikon__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
-            </div>
-        </div>
-
-        <div class="ikon">
-            <img class="ikon__image" src="fota/globe.svg" alt="Zeměkoule">
+            <div class="ikon">
+                <img class="ikon__image" src="images/map.svg" alt="Bod na mapě">
                 <div class="ikon__folder">
-                <h4 class="ikon__title">Do celého světa</h4>
-                <p class="ikon__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+                    <h4 class="ikon__title">Podpora na místě</h4>
+                    <p class="ikon__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="ikon">
-            <img class="ikon__image" src="fota/shield.svg" alt="Štít">
+            <div class="ikon">
+                <img class="ikon__image" src="images/plane.svg" alt="letadlo">
                 <div class="ikon__folder">
-                <h4 class="ikon__title">Vaše bezpečí</h4>
-                <p class="ikon__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
-            </div>        
-        </div>
+                    <h4 class="ikon__title">Služby na letišti</h4>
+                    <p class="ikon__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+                </div>
+            </div>
 
-    </section>
+            <div class="ikon">
+                <img class="ikon__image" src="images/globe.svg" alt="Zeměkoule">
+                    <div class="ikon__folder">
+                    <h4 class="ikon__title">Do celého světa</h4>
+                    <p class="ikon__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+                </div>
+            </div>
 
-    <!--sekce last-offers-->
-    <h2>Last minute zájezdy</h2>
-    <section class="offers last-offers">
-        <div class="offers__offer--big">
-            <p class="offers__price">15 900 Kč</p>
-            <h1 class="offers__title--big">Romantika u horského jezera</h1>
-            <p class="offers__text">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
-        </div>
+            <div class="ikon">
+                <img class="ikon__image" src="images/shield.svg" alt="Štít">
+                    <div class="ikon__folder">
+                    <h4 class="ikon__title">Vaše bezpečí</h4>
+                    <p class="ikon__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+                </div>        
+            </div>
 
-        <div class="offers__offer--small">
-            <p class="offers__price">18 500 Kč</p>
-            <h3 class="offers__title--small">Grand Canyon</h3>
-        </div>
+        </section>
 
-        <div class="offers__offer--small">
-            <p class="offers__price">8 900 Kč</p>
-            <h3 class="offers__title--small">Pěšky po Kanárských ostrovech</h3>
-        </div>
+        <!--sekce last-offers-->
+        <h2>Last minute zájezdy</h2>
+        <section class="offers offers--alt">
 
-    </section>
+            <div class="offer">
+                <img class="offer__image" src="images/lodicka@2x.png" alt="Na lodi">
+                <p class="offer__price">15 900 Kč</p>
+                <h1 class="offer__title--big">Romantika u horského jezera</h1>
+                <p class="offer__text">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
+            </div>
 
-    <!--sekce newsletters -->
-    <h2>Novinky</h2>
-    <section class="newsletters">
+            <div class="offer">
+                <img class="offer__image" src="images/podkova.png" alt="Grand Canyon">
+                <p class="offer__price">18 500 Kč</p>
+                <h3 class="offer__title--small">Grand Canyon</h3>
+            </div>
 
-        <div class="newsletter">
-            <p class="newsletter__date">15.8.2020</p>
-            <p class="newsletter__title">Magický Zanzibar</p>
-            <p class="newsletter__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
-        </div>
+            <div class="offer">
+                <img class="offer__image" src="images/zatoka@2x.png" alt="Zátoka">
+                <p class="offer__price">8 900 Kč</p>
+                <h3 class="offer__title--small">Pěšky po Kanárských ostrovech</h3>
+            </div>
 
-        <div class="newsletter">
-            <p class="newsletter__date">31.9.2020</p>
-            <p class="newsletter__title">Návrat českých občan ze zahraničí</p>
-            <p class="newsletter__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
-        </div>
+        </section>
 
-        <div class="newsletter">
-            <p class="newsletter__date">6.10.2020</p>
-            <p class="newsletter__title">Na Kubu s PCR testem</p>
-            <p class="newsletter__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
-        </div>
+        <!--sekce newsletters -->
+        <h2>Novinky</h2>
+        <section class="newsletters">
 
-    </section>
+            <div class="newsletter">
+                <p class="newsletter__date">15.8.2020</p>
+                <p class="newsletter__title">Magický Zanzibar</p>
+                <p class="newsletter__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
+            </div>
+
+            <div class="newsletter">
+                <p class="newsletter__date">31.9.2020</p>
+                <p class="newsletter__title">Návrat českých občan ze zahraničí</p>
+                <p class="newsletter__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
+            </div>
+
+            <div class="newsletter">
+                <p class="newsletter__date">6.10.2020</p>
+                <p class="newsletter__title">Na Kubu s PCR testem</p>
+                <p class="newsletter__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
+            </div>
+
+        </section>
+
+    </main>
 
     <!--sekce footer-->
     <footer class="footer">
