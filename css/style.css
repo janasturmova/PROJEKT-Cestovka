@@ -1,1 +1,117 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__logo {
+  display: block;
+  margin: 35px auto 30px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.header__item {
+  text-decoration: none;
+  color: #F03000;
+  display: block;
+  padding: 20px;
+}
+.header__item:hover {
+  color: white;
+  background-color: #F03000;
+}
+
+.offers__offer--big {
+  height: 240px;
+  background-image: url(fota/palmy.png);
+}
+
+.offers__price {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #F03000;
+  color: white;
+  display: inline-block;
+}
+
+.ikons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ikon {
+  background-color: #F0F0F0;
+  padding: 20px 20px 20px 0;
+  display: grid;
+  grid-template-columns: 94px auto;
+}
+
+.ikon__title {
+  color: #F03000;
+  margin: 0;
+  font-size: 18px;
+}
+
+.ikon__text {
+  margin-bottom: 0;
+}
+
+.ikon__image {
+  justify-self: center;
+}
+
+.newsletters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.newsletter {
+  background-color: #F0F0F0;
+  padding: 20px;
+}
+
+.newsletter__date {
+  margin: 0;
+  color: #888888;
+}
+
+.newsletter__title {
+  color: #F03000;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.newsletter__text {
+  margin: 0;
+}
+
+.footer {
+  background-color: #444444;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 40px 0;
+}/*# sourceMappingURL=style.css.map */

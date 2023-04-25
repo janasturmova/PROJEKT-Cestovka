@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Cestovka</title>
 </head>
 <body>
 
@@ -14,18 +20,16 @@
 
         <img class="header__logo" src="fota/logo.svg" alt="logo">
         <nav class="header__menu">
-            <ul>
-                <li class="header__tag--secondery">Last minute</li>
-                <li class="header__tag--secondery">Destinace</li>
-                <li class="header__tag--primary">Časté dotazy</li>
-            </ul>
+            <a class="header__item" href="#">Last minute</a>
+            <a class="header__item" href="#">Destinace</a>
+            <a class="header__item" href="#">Časté dotazy</a>
         </nav>
 
     </header>
 
     <!--sekce first-offers-->
     <section class="offers first-offers">
-
+        
         <div class="offers__offer--big">
             <p class="offers__price">17 600 Kč</p>
             <h1 class="offers__title--big">Pohoda pod palmami</h1>
@@ -48,32 +52,41 @@
     <section class="ikons">
 
         <div class="ikon">
-            <img class="ikon__map" src="fota/map.svg" alt="Bod na mapě">
-            <h4 class="ikon__title">Podpora na místě</h4>
-            <p class="ikon__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+            <img class="ikon__image" src="fota/map.svg" alt="Bod na mapě">
+            <div class="ikon__folder">
+                <h4 class="ikon__title">Podpora na místě</h4>
+                <p class="ikon__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+            </div>
         </div>
 
         <div class="ikon">
-            <img class="ikon__plane" src="fota/plane.svg" alt="letadlo">
-            <h4 class="ikon__title">Služby na letišti</h4>
-            <p class="ikon__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+            <img class="ikon__image" src="fota/plane.svg" alt="letadlo">
+            <div class="ikon__folder">
+                <h4 class="ikon__title">Služby na letišti</h4>
+                <p class="ikon__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+            </div>
         </div>
 
         <div class="ikon">
-            <img class="ikon__globe" src="fota/globe.svg" alt="Zeměkoule">
-            <h4 class="ikon__title">Do celého světa</h4>
-            <p class="ikon__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+            <img class="ikon__image" src="fota/globe.svg" alt="Zeměkoule">
+                <div class="ikon__folder">
+                <h4 class="ikon__title">Do celého světa</h4>
+                <p class="ikon__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+            </div>
         </div>
 
         <div class="ikon">
-            <img class="ikon__shield" src="fota/shield.svg" alt="Štít">
-            <h4 class="ikon__title">Vaše bezpečí</h4>
-            <p class="ikon__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+            <img class="ikon__image" src="fota/shield.svg" alt="Štít">
+                <div class="ikon__folder">
+                <h4 class="ikon__title">Vaše bezpečí</h4>
+                <p class="ikon__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+            </div>        
         </div>
 
     </section>
 
     <!--sekce last-offers-->
+    <h2>Last minute zájezdy</h2>
     <section class="offers last-offers">
         <div class="offers__offer--big">
             <p class="offers__price">15 900 Kč</p>
@@ -94,9 +107,8 @@
     </section>
 
     <!--sekce newsletters -->
+    <h2>Novinky</h2>
     <section class="newsletters">
-
-        <h2>Novinky</h2>
 
         <div class="newsletter">
             <p class="newsletter__date">15.8.2020</p>
