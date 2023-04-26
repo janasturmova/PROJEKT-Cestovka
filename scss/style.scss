@@ -16,6 +16,11 @@ body {
     padding: $spacer
 }
 
+.wraper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +28,11 @@ h4,
 li {
     font-family: $font-special;
 }
+
+h2 {
+    margin-top: $spacer * 2;
+}
+
 .header {
     @media screen and (min-width:480px) {
         display: flex;
@@ -66,45 +76,99 @@ li {
 
 .offer {
 position: relative;
-width: 100vw;
-}
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 
-.offer__image {
+    &__image {
     position: absolute;
     top: 0;
     left: 0;
-    right: 100%;
-    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
-}
+    }
 
-.offer__price {
+    &__price {
     font-size: 18px;
     padding: $spacer / 2;
     background-color: $color-primary;
     color:white;
     font-weight: 600;
-    display: inline-block;
+    margin: $spacer;
+    align-self: start;
+    }
+
+    &__texts {
+        color: white;
+        margin: $spacer;
+    }
+
+    &__text {
+        margin: 0;
+    }
 
 }
+
+.offers {
+    display: grid;
+    grid-template-rows: 240px 150px 150px;
+    gap: $spacer;
+    margin-top: 30px;
+
+    @media screen and (min-width: 480px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 380px 180px;
+
+        & :first-child {
+            grid-column: 1 / -1;
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 180px 180px;
+
+        & :first-child {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+
+        }
+    }
+}
+
+
 
 .ikons {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: $spacer * 2;
 
     @media screen and (min-width:480px){
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 188px 188px ;
+        grid-template-rows: 190px 190px;
+        gap: $spacer;
     }
+
+     @media screen and (min-width:1100px){
+        grid-template-columns: repeat(4, 1fr);
+     }
 }
 
 .ikon {
     background-color: $color-ikon;
     padding: 20px 20px 20px 0;
     display: grid;
-    grid-template-columns: 94px auto;
+    grid-template-columns: 95px auto;
+
+    @media screen and (min-width:480px) { 
+        display: inline;
+        text-align: center;
+        padding: $spacer;
+    }
     
 }
 
@@ -112,6 +176,10 @@ width: 100vw;
     color: $color-primary;
     margin: 0;
     font-size: 18px;
+    margin-top: 20px;
+    @media screen and (min-width:480px) {
+
+    }
 }
 
 .ikon__text {
@@ -121,6 +189,7 @@ width: 100vw;
 .ikon__image {
     justify-self: center;
 }
+
 
 .newsletters {
     display: flex;
@@ -143,10 +212,12 @@ width: 100vw;
     color: $color-primary;
     margin: 0;
     padding: 10px 0;
+    font-weight: 600;
 }
 
 .newsletter__text {
     margin: 0;
+    font-weight: 600;
 }
 
 .footer {
